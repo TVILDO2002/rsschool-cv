@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>CV • RSS</title>
+    <meta name="description" content="Resume / CV with RSS feed" />
+    <link rel="alternate" type="application/rss+xml" title="CV RSS Feed" href="/feed.xml" />
+    <link  rel="stylesheet" href="style.css" />
+
+</head>
+<body>
+    <header>
+        <h1>N-T Front-End Developer</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#code">Code Example</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>   
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <div class="contactInfo">
+                <img src="Nika_Tvildiani.png" alt="Nika Tvildiani Avatar" />
+                <div class="aboutMe">
+                    <div >
+                        <ul>
+                            <li><strong>Name</strong>: Nika Tvildiani</li>
+                            <li><strong>Phone Number:</strong>  +995 599 537 310</li>
+                            <li><strong>Email:</strong> <a href="mailto:tvildiani00@gmail.com">tvildiani00@gmail.com</a></li>
+                            <li><strong>GitHub:</strong> <a href="https://github.com/TVILDO2002">TVILDO2002</a></li>
+                            <li><strong>Discord:</strong> ash.7444</li>
+                            <li><strong>Location:</strong> Tbilisi, Georgia</li>
+                        </ul>
+                    </div>
+                    <p>I am a Computer Engineering graduate with a strong interest in Front-End and Full-Stack development. 
+                        I have hands-on experience building web applications using React, Node.js, and PostgreSQL. 
+                        I enjoy creating user-friendly interfaces and writing clean, maintainable code. 
+
+                        I am highly motivated, detail-oriented, and constantly improving my skills in modern web technologies. 
+                        Currently, I am focused on deepening my knowledge of Front-End development with React, state management patterns, and scalable UI architecture.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills">
+                <div>
+                    <h3>Front-End</h3>
+                    <ul>
+                        <li>HTML5</li>
+                        <li>CSS3 / SCSS</li>
+                        <li>JavaScript (ES6+)</li>
+                        <li>React</li>
+                        <li>TailWind CSS</li>
+                        <li>Bootstrap CSS</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Back-End</h3>
+                    <ul>
+                        <li>Node.js</li>
+                        <li>Express.js</li>
+                        <li>PostgreSQL</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Tools</h3>
+                    <ul>
+                        <li>Git & GitHub</li>
+                        <li>Postman</li>
+                        <li>VS Code</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Other Programming Languages</h3>
+                    <ul>
+                        <li>Basic of Java</li>
+                        <li>C/C++</li>
+                        <li>Object Oriented Programming</li>
+                        <li>Basic of Python</li>
+                    </ul>
+                </div>
+                
+            </div>
+
+            
+        </section>
+        <section id="code">
+            <h2>Code Example</h2>
+            <p><strong>Task:</strong> Count the number of distinct case-insensitive characters that occur more than once in a string.</p>
+
+            <pre class="codeExample"><code>
+            function duplicateCount(text) {
+            const lower = text.toLowerCase();
+            const counts = {};
+            let duplicates = 0;
+
+            for (let char of lower) {
+                counts[char] = (counts[char] || 0) + 1;
+            }
+
+            for (let key in counts) {
+                if (counts[key] > 1) duplicates++;
+            }
+
+            return duplicates;
+            }
+            </code>
+            <p><strong>Example:</strong> "aA11" → 2</p>
+            </pre>
+
+            
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+
+            <div class="project">
+                <h3>Manga Reading Platform</h3>
+                <p>Full-stack web application for reading and managing manga chapters. On the site, users can register, manage their reading progress, leave comments on chapters, and interact with other readers.</p>
+
+                <ul>
+                    <li><strong>Frontend:</strong> React</li>
+                    <li><strong>Backend:</strong> Express.js</li>
+                    <li><strong>Database:</strong> PostgreSQL</li>
+                    <li><strong>Authentication:</strong> JWT</li>
+                    <li><strong>Image Storage:</strong> Cloudinary</li>
+                    <li><strong>Frontend Deployed at:</strong> Cloudflare Pages</li>
+                    <li><strong>Backend Deployed at:</strong> Railway (currently offline)</li>
+                </ul>
+
+                <p>
+                    <strong>GitHub:</strong>
+                <a href="https://github.com/TVILDO2002/MahwaVerse" target="_blank">
+                    View Source Code
+                </a>
+                </p>
+
+                <p>
+                <strong>Live Demo:</strong>
+                <a href="https://dokkaiscans.com/" target="_blank">
+                    View Live Website
+                </a>
+                    (Frontend deployed, backend currently offline)
+                </p>
+            </div>
+
+            <div class="project">
+                <h3>Air Control Device</h3>
+                <p>
+                    Device which was used for monitoring air quality in a specific area. It collects data on various air parameters such as temperature, humidity, and pollutant levels. The device is equipped with sensors that continuously measure these parameters and transmit the data to a central server for analysis and real-time monitoring. and next sents this data to mobile application, where users can view the air quality data in real-time, receive alerts about poor air quality, and access historical data for analysis. The project was developed using React Native for the mobile application, Python for the backend server, and MySQL for data storage. It also includes a real-time data monitoring system to ensure users have up-to-date information about their environment.
+                </p>
+
+                <ul>
+                    <li><strong>Frontend:</strong> React Native</li>
+                    <li><strong>Backend:</strong> Python </li>
+                    <li><strong>Database:</strong> MySQL database</li>
+                    <li><strong>Monitoring:</strong> Real-time data monitoring</li>
+                </ul>
+
+                <p>
+                <strong>GitHub:</strong>
+                <a href="https://github.com/TVILDO2002/airmzomApp" target="_blank">
+                    View Source Code
+                </a>
+                </p>
+                <p>
+                <strong>Project Information</strong>
+                <a href="https://tvildo2002.github.io/airmzom-web/" target="_blank">
+                    View Project Details
+                </a> (Available only in Georgian)
+                </p>
+                
+            </div>
+        </section>
+        <section id="education"> <h2>Education & Courses</h2>
+            <ul>
+                <li>
+                    <strong>Ilia State University</strong> — Computer Engineering (Bachelor's degree, 2021–2025)
+                </li>
+                <li>
+                    <strong>Full-Stack Web Development Course</strong> — Udemy (Completed 2025)
+                    <br>
+                    Learned React, Node.js, Express.js, MYSQL, REST API development
+                    <a href="https://www.udemy.com/certificate/UC-ed919d48-62c7-48c5-90cd-a013ba7463fd/" target="_blank">Certificate</a>
+                </li>
+                <li>
+                    <strong>Front-End Development Course</strong> — Unilab (3 months, Completed 2024)
+                    <br>
+                    Learned HTML, CSS, BootStrap, Baisc of Javascript
+                </li>
+                <li>
+                    English — Upper-Intermediate (B2+)
+                    2 years of academic English at university (4 semesters).
+                    Practice included technical reading, presentations, written assignments, and exams.
+                </li>
+            </ul>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="footerWraper">
+            <ul>
+                <li> <img src="phone.png" alt="Phone Icon"> +995 599 537 310</li>
+                <li><img src="mail.png" alt="Email Icon"> <a href="mailto:tvildiani00@gmail.com">tvildiani00@gmail.com</a></li>
+                <li><img src="github.png" alt="GitHub Logo">   <a href="https://github.com/TVILDO2002">TVILDO2002</a></li>
+            </ul>
+            <div>
+                <h4>Made for Rss School</h4>
+                <p><a href="https://rs.school/courses/short-track"><img src="rs-school-logo.svg" alt="RSS School Logo"> RSS School Website</a></p>
+            </div>
+        </div>
+        <p class="copyRight">&copy; 2026 Nika Tvildiani. All rights reserved.</p>
+    </footer>   
+</body>
+</html>

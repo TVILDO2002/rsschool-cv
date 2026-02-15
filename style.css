@@ -1,0 +1,326 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+body { 
+    background-color: #061427;
+    color: #00FFF5;
+    font-size: 18px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+h2{
+    font-size: 30px;
+}
+strong{
+    color:#00FFF5
+}
+/********************** Navigation Bar ************************/
+header{
+     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+}
+header h1{
+    font-size: 28px;
+    color: #00FFF5;
+    margin-right: 50px;
+}
+nav ul {
+    display:flex;
+    gap: 15px;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    padding: 20px;
+}
+nav ul a{
+    font-size: 20px;
+    color: #00FFF5;
+}
+
+/******************** About Section **********************/
+
+#about {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+.contactInfo{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+
+}
+.contactInfo img{
+    width: 356px;
+    height: 356px;
+    border-radius: 15px;
+
+}
+.aboutMe{
+    color:antiquewhite;
+    display:flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+}
+
+/******************** Skills **********************/
+
+#skills {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.skills{
+    display: flex;
+    gap: 50px;
+}
+.skills ul li {
+    color:antiquewhite;
+    margin-top: 10px;
+}
+/******************** code Example **********************/
+#code{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+#code pre{
+    background: black;
+    color: white;
+}
+.codeExample {
+    padding: 15px;
+    border-radius: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    color: antiquewhite;
+    margin-top: 20px;
+}
+/******************** Projects **********************/
+#projects {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+#projects h3{
+    margin: 15px 0;
+    text-align: center;
+    
+}
+.project {
+    font-size: 18px;
+    display:flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 80%;
+}
+.project p{
+    color:antiquewhite;
+}
+.project ul li{
+    margin-top: 3px;
+    color:antiquewhite;
+}
+
+
+/******************** Education **********************/
+#education {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    
+}
+#education h3{
+    margin-top: 10px;
+    text-align: center;
+    
+}
+#education ul {
+    margin-top: 10px;
+    width: 80%;
+}
+#education ul li {
+    margin-top: 20px;
+    color:antiquewhite;
+}
+
+/******************** footer **********************/
+footer {
+    padding: 0 100px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+footer ul{
+    padding: 15px;
+    border: 1px dashed #00FFF5;
+    border-radius: 20px;
+}
+footer ul li{
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+.footerWraper div{
+    padding: 22px;
+    border: 1px dashed #00FFF5;
+    border-radius: 20px;
+}
+footer  a {
+    color: #00FFF5;
+}
+footer img{
+    width: 30px;
+    height: 30px;
+}
+.footerWraper{
+    display: flex;
+    gap: 25px;  
+    justify-content: space-between;
+}
+.footerWraper div a{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.copyRight{
+    color:antiquewhite;
+    font-size: 14px;
+    align-self: center;
+}
+
+@media (max-width: 720px) {
+    body { font-size: 16px; }
+    h1{ font-size: 24px; }
+    /* Navigation */
+    nav ul {
+        gap: 10px;
+        padding: 15px;
+    }
+    nav { font-size: 16px; }
+
+    /* About */
+    #about { margin-top: 30px; }
+    .aboutMe div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    .contactInfo {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+    .contactInfo img {
+        width: 280px;
+        height: 280px;
+    }
+    .aboutMe {
+        width: 90%;
+        gap: 16px;
+        font-size: 16px;
+    }
+
+    /* Skills */
+    #skills { margin-top: 40px; }
+    .skills {
+        flex-direction: column;
+        gap: 16px;
+        align-items: center;
+        justify-content: center;
+    }
+    .skills div, .skills ul 
+    {   display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .skills ul li { margin-top: 8px; }
+
+    /* Projects */
+    #projects { margin-top: 40px; }
+    .project {
+        width: 90%;
+        font-size: 16px;
+    }
+
+    /* Education */
+    #education { margin-top: 40px; }
+    #education ul { width: 90%; }
+    .footerWraper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+         gap: 25px;
+    }
+}
+
+@media (max-width: 400px) {
+    body { font-size: 14px; }
+
+    /* Navigation */
+    nav ul {
+        flex-direction: column;
+        gap: 8px;
+        padding: 12px;
+    }
+    nav ul a { font-size: 16px; }
+
+    /* About */
+    #about { margin-top: 20px; }
+    .contactInfo {
+        flex-direction: column;
+        gap: 12px;
+    }
+    .contactInfo img {
+        width: 200px;
+        height: 200px;
+        border-radius: 12px;
+    }
+    .aboutMe {
+        width: 95%;
+        gap: 12px;
+        font-size: 14px;
+    }
+
+    /* Skills */
+    .skills { gap: 12px; }
+
+    /* Projects */
+    .project {
+        width: 95%;
+        font-size: 14px;
+    }
+
+    /* Education */
+    #education ul { width: 95%; }
+}
